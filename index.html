@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anime scene search,
+    find an anime based on a picture.
+    Search Anime by ScreenShot. Lookup the exact moment and the episode ... paste or drop image here; trace back the scene from an anime screenshot.
+    Anime search engine that fetches anime info based on the image provided.">
+    <title>Get any Anime from Image | Search Anime by Screenshot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img class="Lufi" src="img/luffy.webp" alt="Find Exact Anime Scene by Image">
+        
+        <!-- https://soruly.github.io/trace.moe-api/#/docs
+        https://github.com/public-apis/public-apis -->
+        <main>
+            <h1>Find Exact Anime Scene by Image</h1>
+            <h3>
+                Identify Anime Episodes, Timestamps and Synced Previews from Screenshots
+            </h3>
+            <div class="form">
+                <div class="input-wrapper">
+                    <input type="text" id="image" name="image" placeholder="Paste the image URL here" />
+                    <span class="file_wrapper">
+                        <input type="file" name="files[]" accept="image/*">
+                        📁
+                    </span>
+                </div>
+                <p>
+                    <input type="submit" class="button-63" value="Search"  onclick="send(this)"/>
+                </p>
+            </div>
+        </main>
+    <article class="results"></article>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
