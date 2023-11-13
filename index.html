@@ -25,13 +25,13 @@
             <div class="form">
                 <div class="input-wrapper">
                     <input type="text" id="image" name="image" placeholder="Paste the image URL here" />
-                    <span class="file_wrapper">
-                        <input type="file" name="files[]" accept="image/*">
+                    <!-- <span class="file_wrapper">
+                        <input type="file" name="files[]" accept="image/*" onchange="handleFileSelect(event)">
                         📁
-                    </span>
+                    </span> -->
                 </div>
                 <p>
-                    <input type="submit" class="button-63" value="Search"  onclick="send(this)"/>
+                    <input type="submit" class="button-63" value="Search"  onclick="send()"/>
                 </p>
             </div>
         </main>
